@@ -32,4 +32,4 @@ jobs:
 
     - name: Deploy
       if: success()
-      run: aws s3 sync ./dist/tawet-consulting s3://tawetconsulting
+      run: aws s3 sync ./dist/tawetconsulting s3://www.tawetconsulting.com
