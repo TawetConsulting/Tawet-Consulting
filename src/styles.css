@@ -1,5 +1,4 @@
 @import url('./assets/css/base.css');
-@import url('./assets/css/layout.css');
 @import url('fonts.css');
 header {
     position: fixed;
@@ -12,6 +11,8 @@ header {
     justify-content: space-between;
     padding: 33px 9%;
     background: transparent;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
 }
 
 .logo {
@@ -47,10 +48,9 @@ header {
 }
 
 .tawet-hero {
-    height: 100dvh;
-    width: 100dvw;
-    min-height: 100dvh;
-    background: linear-gradient(245deg, var(--color-linear-1) 0%, var(--color-linear-2) 28.53%, var(--color-linear-2) 75.52%);
+    height: 60dvh;
+    width: 100%;
+    min-height: 60dvh;
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -69,7 +69,7 @@ header {
     font-weight: 400;
     font-family: "Permanent Marker", cursive;
     z-index: 500;
-    color: var(--color-on-primary);
+    color: var(--color-goldenrod);
     margin-bottom: 1rem;
 }
 
@@ -81,7 +81,7 @@ header {
 }
 
 .tawet-hero-text p {
-    color: var(--color-on-primary);
+    color: var(--color-thistle);
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.9;
@@ -148,10 +148,189 @@ section {
     padding: 0 19%;
 }
 
+
+/* About section */
+
+.tawet-about {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+    margin-block: 1rem;
+}
+
+.tawet-about-image img {
+    width: 100%;
+    border-radius: 2%;
+    z-index: -1;
+}
+
+.tawet-about-text {
+    animation: slideInLeft 3s ease-in-out forwards;
+    transform: translateX(-100);
+    opacity: 0;
+}
+
+.tawet-about-text h1 {
+    font-size: 1rem;
+    font-weight: 400;
+    z-index: 500;
+    color: var(--color-white-smoke);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-decoration: overline;
+}
+
+.tawet-about-text h5 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    z-index: 500;
+    font-family: "Permanent Marker", cursive;
+    color: var(--color-tangerine);
+    margin-bottom: 1rem;
+}
+
+.tawet-about-text p {
+    color: var(--color-thistle);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.9;
+    margin-bottom: 1rem;
+}
+
+.tawet-about-text a {
+    display: inline-block;
+    margin-inline-end: 1rem;
+    margin-block: 2rem;
+    color: var(--color-on-primary);
+    padding: 12px 30px;
+    border: 1px solid transparent;
+    line-height: 1.1;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background-color: var(--color-linear-1);
+    transition: all 0.55s ease;
+}
+
+.tawet-about-text a:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-on-primary);
+    transform: translate(10px);
+}
+
+
+/* Services Section */
+
+.tawet-services-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-block: 1rem;
+}
+
+.tawet-services-header h1 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-thistle);
+    text-transform: uppercase;
+    text-decoration: overline;
+}
+
+.tawet-services-sub-header h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--color-white-smoke);
+    z-index: -500;
+    text-transform: uppercase;
+}
+
+.tawet-services-body {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    transition: all .55s ease;
+}
+
+.tawet-services-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 2%;
+    z-index: 2000;
+}
+
+.tawet-services-image {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-size: cover;
+    align-items: center;
+}
+
+.tawet-services-card-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    z-index: 500;
+    color: var(--color-white-smoke);
+    text-transform: uppercase;
+}
+
+.tawet-card-body {
+    font-size: 1rem;
+    font-weight: 300;
+    z-index: 500;
+    line-height: 2;
+    color: var(--color-thistle);
+    padding-inline: 1rem;
+    text-align: justify;
+}
+
+.tawet-card-actions {
+    display: inline-block;
+    margin-inline-end: 1rem;
+    color: var(--color-on-primary);
+    padding: 12px 30px;
+    border: 1px solid transparent;
+    line-height: 1.1;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background-color: var(--color-linear-1);
+    transition: all 0.55s ease;
+}
+
+.tawet-card-actions:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-on-primary);
+    transform: translate(10px);
+}
+
 @keyframes zoomIn {
     to {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+@keyframes slideInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes blurAnimation {
+    0% {
+        text-shadow: -10px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    100% {
+        text-shadow: 300px 0px 200px rgba(0, 0, 0, 0.5);
     }
 }
 
@@ -192,6 +371,14 @@ section {
         gap: 1rem;
         grid-template-columns: 1fr;
     }
+    .tawet-about {
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .tawet-about img {
+        display: none;
+    }
     .scroll-down {
         display: none;
     }
@@ -208,12 +395,13 @@ section {
         width: 200px;
         height: 25vh;
         z-index: 2000;
-        background: transparent;
+        background: var(--color-thistle);
         display: flex;
         align-items: center;
         flex-direction: column;
         padding: 20px 10px;
         transition: all .55s ease;
+        border: 2px solid blue;
     }
     .nav-list a {
         margin-left: 0px;
