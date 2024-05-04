@@ -405,9 +405,74 @@ section {
 }
 
 .tawet-footer {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-inline: 9%;
+    padding-block: 2rem;
+}
+
+.tawet-company-details,
+.tawet-copywrite-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-block: 0.5rem;
+}
+
+.company {
+    font-style: bold;
+    font-size: 2rem;
+    color: var(--color-white-smoke);
+    font-weight: 500;
+}
+
+.socials {
+    align-self: end;
+}
+
+.socials ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.socials ul li a i {
+    font-size: 2rem;
+    color: var(--color-white-smoke);
+    text-decoration: none;
+}
+
+.socials ul li a i:hover {
+    z-index: 2000;
+    transform: scale(1.5);
+    color: var(--color-tangerine);
+}
+
+.copywrite {
+    color: var(--color-thistle);
+    z-index: 2000;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.footer-nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.footer-nav-list a {
+    color: var(--color-thistle);
+    font-size: 1rem;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    transition: all .5s ease-out;
+}
+
+.footer-nav-list a:hover {
+    border-bottom: 2px solid var(--color-tangerine);
 }
 
 @keyframes zoomIn {
