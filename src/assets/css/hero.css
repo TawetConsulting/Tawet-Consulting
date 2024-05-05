@@ -1,0 +1,130 @@
+/* hero section */
+
+.tawet-hero {
+    height: 65dvh;
+    width: 100%;
+    min-height: 65dvh;
+    margin-top: 15dvh;
+    position: relative;
+}
+
+.tawet-hero-courasel {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.tawet-hero-items {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.tawet-hero-items:first-child {
+    display: flex;
+}
+
+.tawet-hero-items {
+    animation: carouselAnimation 6s ease-in-out infinite;
+}
+
+.tawet-hero-1 {
+    animation-delay: 0s;
+    /* No delay for the first item */
+}
+
+.tawet-hero-2 {
+    animation-delay: 2s;
+    /* Delay the second item by 2 seconds */
+}
+
+.tawet-hero-text {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tawet-hero-text h5 {
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: "Permanent Marker", cursive;
+    z-index: 500;
+    color: var(--color-goldenrod);
+    margin-bottom: 1rem;
+}
+
+.tawet-hero-text h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    z-index: 500;
+    color: var(--color-on-primary);
+    margin-bottom: 2rem;
+}
+
+.tawet-hero-text p {
+    color: var(--color-thistle);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.9;
+    margin-bottom: 1rem;
+}
+
+.tawet-hero-image {
+    flex-basis: 50%;
+}
+
+.tawet-hero-image img {
+    width: 100%;
+    height: 30rem;
+    border-radius: 1rem;
+    transform-style: preserve-3d;
+    align-items: end;
+    box-shadow: 10px 10px 10px var(--color-primary);
+    transform: scale(0.8) translateZ(-100px) rotate3d(1, 2, 5, -5deg);
+    object-fit: cover;
+}
+
+.tawet-hero-text a {
+    align-self: flex-start;
+    display: inline-block;
+    margin-inline-end: 1rem;
+    margin-block: 2rem;
+    color: var(--color-on-primary);
+    padding: 12px 30px;
+    line-height: 1.1;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, var(--color-linear-1) 10%, var(--color-goldenrod) 100%);
+    transition: all 0.55s ease;
+}
+
+.tawet-hero-text a:hover {
+    background: transparent;
+    border: 1px solid var(--color-on-primary);
+    transform: translate(10px);
+}
+
+.tawet-hero-text a.ctaa {
+    background-color: transparent;
+    border: 1px solid var(--color-on-primary);
+    margin-left: 5px;
+}
+
+@keyframes carouselAnimation {
+    0%,
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    10%,
+    90% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
