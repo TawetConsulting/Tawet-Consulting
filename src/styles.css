@@ -23,7 +23,7 @@
 .tawet-about-text {
     animation: slideInLeft 3s ease-in-out forwards;
     transform: translateX(-100);
-    opacity: 0;
+    opacity: 1;
 }
 
 .tawet-about-text h1 {
@@ -243,6 +243,7 @@
 .tawet-industry-card img {
     width: 22rem;
     height: 22rem;
+    object-fit: cover;
     border-radius: 30% 10px;
 }
 
@@ -360,6 +361,9 @@
         right: 3%;
         transition: .2s;
     }
+    .tawet-hero-image {
+        display: flex;
+    }
 }
 
 @media (max-width: 1430px) {
@@ -406,6 +410,9 @@
     .scroll-down {
         display: none;
     }
+    .tawet-hero-text h5 {
+        font-size: 4rem;
+    }
 }
 
 @media (max-width: 990px) {
@@ -435,5 +442,31 @@
     }
     .nav-list.open {
         right: 0;
+    }
+    .tawet-hero-image {
+        display: none;
+    }
+    .tawet-hero-text {
+        flex-basis: 90%;
+    }
+    .tawet-hero-container {
+        width: 100%;
+        padding-inline: 1rem;
+    }
+    .tawet-hero {
+        margin-top: 5vh;
+    }
+    .tawet-hero-text h5 {
+        font-size: 2.5rem;
+    }
+    .tawet-industries-section,
+    .tawet-footer,
+    .tawet-company-details,
+    .tawet-copywrite-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .socials {
+        align-self: flex-start;
     }
 }

@@ -12,18 +12,24 @@
     <div class="bx bx-menu" id="menu-icon" (click)="toggleMenu()" [ngClass]="{'bxs-x-square': isMenuOpen}"></div>
 </header>
 
-<section class="tawet-hero">
-    <div class="tawet-hero-text">
-        <h1>Mastering Risk and Finance</h1>
-        <h5 class="">Go beyond boundaries</h5>
+<div class="tawet-hero-container">
+    <swiper [config]="config">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide tawet-hero" *ngFor="let slide of slides">
+                <div class="tawet-hero-text">
+                    <h1>{{slide.subtitle}}</h1>
+                    <h5 class="">{{slide.title}}</h5>
 
-        <p>Unlock the power of interdisciplinary expertise to conquer evolving risk landscapes and propel your business towards unparalleled growth.</p>
-        <a href="#">CONSULT US</a>
-    </div>
-    <!-- <div class="tawet-hero-image">
-        <img src="../assets/images/backgrounds/welcome/insight_unleshed.jpg">
-    </div> -->
-</section>
+                    <p>{{slide.text}}</p>
+                    <a href="#">CONSULT US</a>
+                </div>
+                <div class="tawet-hero-image">
+                    <img src="{{slide.image}}">
+                </div>
+            </div>
+        </div>
+    </swiper>
+</div>
 
 <section class="tawet-about">
     <div class="tawet-about-image">
@@ -86,7 +92,7 @@
     </div>
     <div class="tawet-industry-images">
         <div class="tawet-industry-card">
-            <img src="./../assets/images/backgrounds/welcome/insight_unleshed.jpg" alt="Card Image" class="tawet-industry-card-image">
+            <img src="./../assets/images/industries/financial-services.png" alt="Card Image" class="tawet-industry-card-image">
             <h2 class="tawet-industry-card-title">Financial services</h2>
         </div>
     </div>
