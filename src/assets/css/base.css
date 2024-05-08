@@ -36,3 +36,7 @@ body {
 section {
     padding: 0 19%;
 }
+
+.swiper-wrapper {
+    box-sizing: border-box;
+}
