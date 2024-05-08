@@ -17,12 +17,21 @@ header {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--color-on-primary);
+    padding: 1rem;
+}
+
+.logo img {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    scale: 2.5;
 }
 
 .nav-list {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    align-self: flex-end;
 }
 
 .nav-list a {
