@@ -1,4 +1,8 @@
-/* hero section */
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination-bullet-active {
+    color: var(--color-goldenrod) !important;
+}
 
 .tawet-hero-container {
     margin: 0 auto;
@@ -15,6 +19,7 @@
     cursor: grab;
     justify-content: center;
     padding-inline: 4rem;
+    padding-block: 2rem;
     background: linear-gradient(to left, var(--color-linear-3) 10%, var(--color-linear-1) 100%);
 }
 
