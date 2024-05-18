@@ -1,0 +1,72 @@
+/* About section */
+
+.tawet-about {
+    background-color: var(--color-linear-1);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-block: 4rem;
+}
+
+.tawet-about-image img {
+    width: 100%;
+    border-radius: 2%;
+    z-index: -1;
+}
+
+.tawet-about-text {
+    animation: slideInLeft 3s ease-in-out forwards;
+    transform: translateX(-100);
+    opacity: 1;
+    margin-top: 1.2rem;
+}
+
+.tawet-about-text h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    z-index: 500;
+    color: var(--color-white-smoke);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-decoration: overline;
+}
+
+.tawet-about-text h5 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    z-index: 500;
+    font-family: "Permanent Marker", cursive;
+    color: var(--color-tangerine);
+    margin-bottom: 1rem;
+}
+
+.tawet-about-text p {
+    color: var(--color-thistle);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.9;
+    margin-bottom: 1rem;
+}
+
+.tawet-about-text a {
+    display: inline-block;
+    margin-inline-end: 1rem;
+    margin-block: 2rem;
+    color: var(--color-on-primary);
+    padding: 12px 30px;
+    line-height: 1.1;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, var(--color-linear-2) 10%, var(--color-goldenrod) 100%);
+    transition: all 0.55s ease;
+}
+
+.tawet-about-text a:hover {
+    background: transparent;
+    border: 1px solid var(--color-on-primary);
+    transform: translate(10px);
+}

@@ -7,7 +7,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 33px 9%;
+    padding: 25px 9%;
     background: transparent;
     backdrop-filter: blur(20px);
     overflow: hidden;
@@ -17,10 +17,9 @@ header {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--color-on-primary);
-    padding: 1rem;
 }
 
-.logo img {
+.logo p {
     width: 48px;
     height: 48px;
     border-radius: 10px;
@@ -31,7 +30,6 @@ header {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    align-self: flex-end;
 }
 
 .nav-list a {

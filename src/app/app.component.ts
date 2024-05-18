@@ -15,13 +15,17 @@ interface Slide {
   styleUrls: ['./app.component.css'],
 })
 
-export class AppComponent {
+export class AppComponent implements AfterViewInit{
+
   title = 'Tawet Consulting';
   loading = true;
   titleState = "";
   isSticky = true;
   
   isMenuOpen: boolean = false;
+
+  @ViewChild('cardBody') cardBodyRef!: ElementRef;
+  maxCharacters = 300;
 
   config: SwiperOptions = {
     loop: true,
@@ -52,6 +56,13 @@ export class AppComponent {
     },
   ];
 
+  yourData = `Our team of data scientists, mathematicians, and computer scientists collaborate to deliver cutting-edge data-driven solutions for complex challenges across healthcare, retail, finance, and insurance. We leverage market trends and implement data-driven decision-making processes. Through the development of predictive models for market trends, customer behavior, and financial performance, we empower companies to make informed decisions with greater certainty. Additionally, we craft hypotheses and testing methods to optimize control within your organization, addressing your unique challenges head-on.`; // Replace with your actual data source
+
+  ngAfterViewInit(): void {
+    if (this.cardBodyRef.nativeElement.textContent.length > this.maxCharacters) {
+      this.cardBodyRef.nativeElement.style.setProperty('--max-chars', this.maxCharacters.toString());
+    }
+  }
   ngOnInit() {
   }
 

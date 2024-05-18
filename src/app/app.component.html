@@ -1,20 +1,17 @@
 <header>
-    <a href="#" class="logo">
-        <img src="./../assets/images/logo/tawet-logo.jpg" alt="">
-    </a>
+    <a href="#" class="logo"> TAWET CONSULTING</a>
 
     <ul class="nav-list" [ngClass]="{'open': isMenuOpen}">
-        <li><a href="#"> Home</a></li>
-        <li><a href="#"> About</a></li>
-        <li><a href="#"> Services</a></li>
-        <li><a href="#"> Industries</a></li>
+        <li><a href="#home"> Home</a></li>
+        <li><a href="#about"> About</a></li>
+        <li><a href="#services"> Services</a></li>
+        <li><a href="#industries"> Industries</a></li>
         <li><a href="#"> Contact</a></li>
     </ul>
-
     <div class="bx bx-menu" id="menu-icon" (click)="toggleMenu()" [ngClass]="{'bxs-x-square': isMenuOpen}"></div>
 </header>
 
-<div class="tawet-hero-container">
+<div id="home" class="tawet-hero-container">
     <swiper [config]="config">
         <div class="swiper-wrapper">
             <div class="swiper-slide tawet-hero" *ngFor="let slide of slides">
@@ -33,18 +30,18 @@
     </swiper>
 </div>
 
-<section class="tawet-about">
-    <div class="tawet-about-image">
-        <img src="../assets/images/logo/about.png">
-    </div>
+<section id="about" class="tawet-about">
     <div class="tawet-about-text">
         <h1>Who we are</h1>
         <h5 class="">ABOUT OUR BUSINESS</h5>
         <p>Founded in 2024, we specialize in risk, finance, and regulation management, we provide tailored solutions to optimize performance and ensure compliance. Trust our expertise to navigate complexities and achieve your goals with confidence</p>
         <a href="#">Read more</a>
     </div>
+    <!-- <div class="tawet-about-image">
+        <img src="../assets/images/about/about-us.jpeg">
+    </div> -->
 </section>
-<section class="tawet-services-section">
+<section id="services" class="tawet-services-section">
     <div class="tawet-services-header">
         <h1>SPECIALIZATION</h1>
     </div>
@@ -55,30 +52,33 @@
     <div class="tawet-services-body">
         <div class="tawet-services-card">
             <img src="../assets/images/services/risk-finance.jpg" alt="Service 1" class="tawet-services-image">
-            <h1 class="tawet-services-card-title">Risk Finance and Regulations</h1>
-            <p class="tawet-card-body">
-                Complex risk-return modeling? Our expert team, all master's degree holders, simplifies with tailored solutions </p>
+            <h1 class="tawet-services-card-title">Risk Finance, and Regulations</h1>
+            <p class="tawet-card-body" #cardBody>
+                Our risk management team headed by a chartered risk analyst will assist you in identifying, assessing, and managing various financial risks, including credit risk, market risk, operational risk, and liquidity risk. With high accuracy in numerical optimization
+                from our mathematical team and risk management team, we develop risk management strategies and policies to mitigate potential threats and keep organizational resilience at an optimal tolerance ... </p>
             <a href="" class="tawet-card-actions">Read more</a>
         </div>
         <div class="tawet-services-card">
             <img src="../assets/images/services/business.jpg" alt="Service 1" class="tawet-services-image">
             <h1 class="tawet-services-card-title"> Data Analytics and Business Intelligence</h1>
-            <p class="tawet-card-body">
-                We're experts in data analytics and business intelligence, providing tailored insights for strategic decision-making and operational optimization </p>
+            <p class="tawet-card-body" #cardBody>
+                Our team of data scientists, mathematicians, and computer scientists collaborate to deliver cutting-edge data-driven solutions for complex challenges across healthcare, retail, finance, and insurance. We leverage market trends and implement data-driven
+                decision-making processes. Through the development of predictive models for market trends, customer behavior, and financial performance, we empower companies to make informed decisions ...</p>
             <a href="" class="tawet-card-actions">Read more</a>
         </div>
 
         <div class="tawet-services-card">
-            <img src="../assets/images/services/reporting.jpg" alt="Service 1" class="tawet-services-image">
-            <h1 class="tawet-services-card-title">Financial Analysis and Reporting</h1>
-            <p class="tawet-card-body">
-                We offer customized financial analysis and reporting, involving your team to navigate future technological challenges. </p>
+            <img src="../assets/images/services/process.jpeg" alt="Service 1" class="tawet-services-image">
+            <h1 class="tawet-services-card-title">Business Process Optimization</h1>
+            <p class="tawet-card-body" #cardBody>
+                We empower businesses by analyzing their processes to identify areas for streamlining and cost optimization through financial mathematics and computational finance techniques. We then leverage consultations to understand your unique challenges and develop
+                customized solutions with ongoing support to ensure successful implementation. Furthermore, we continuously monitor market trends, regulations, and emerging technologies to ensure our services remain relevant ... </p>
             <a href="" class="tawet-card-actions">Read more</a>
         </div>
     </div>
 </section>
 
-<section class="tawet-industries-section">
+<section id="industries" class="tawet-industries-section">
     <div class="tawet-industry-details">
         <h2>
             Industries

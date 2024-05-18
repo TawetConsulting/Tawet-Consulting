@@ -2,7 +2,7 @@
 
 .tawet-hero-container {
     margin: 0 auto;
-    width: 65%;
+    width: 100%;
 }
 
 .tawet-hero {
@@ -14,6 +14,8 @@
     flex-direction: row;
     cursor: grab;
     justify-content: center;
+    padding-inline: 4rem;
+    background: linear-gradient(to left, var(--color-linear-3) 10%, var(--color-linear-1) 100%);
 }
 
 .tawet-hero-text {
