@@ -10,7 +10,9 @@ header {
     padding: 25px 9%;
     background: transparent;
     backdrop-filter: blur(20px);
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow: inherit;
+    
 }
 
 .logo {

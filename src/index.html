@@ -9,11 +9,47 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/logo/tawet-logo.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Whisper&family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
+
+    <header>
+      <a href="#" class="logo">TAWET CONSULTING</a>
+
+      <ul class="nav-list" [ngClass]="{'open': isMenuOpen}">
+          <li><a href="#home" class="nav-menu"> Home</a></li>
+          <li><a href="#about" class="nav-menu"> About</a></li>
+          <li><a href="#our services" class="nav-menu"> Services</a>
+              <ul id="services" class="nav-menu-item">
+                  <li><a class="forLink" href="#our services">Risk, Finance and Regulations</a></li>
+                  <li><a  class="forLink" href="#joint">Data Analytics and Business Intelligence</a></li>
+                  <li><a class="forLink" href="#finTech">FinTech Solutions and Business Process Optimization</a></li>
+                  <li><a class="forLink" [routerLink]="['/moreservice']">Construction, Project Management and Quality Assurance</a></li>
+                  <li><a class="forLink" href="#general">General Services</a></li>
+              </ul>
+          </li>
+          <li><a href="#industries" class="nav-menu"> Industries</a>
+              <ul id="industry" class="nav-menu-item">
+                  <li><a href="#finacial" class="forLink">Financial services</a></li>
+                  <li><a class="forLink" href="#HealthCare"> HealthCare</a></li>
+                  <li><a class="forLink" href="#Infrastructures">Infrastructures and construction</a></li>
+                  <li><a class="forLink" href="#Retail">  Retail</a></li>
+                  <li><a class="forLink" href="#Information"> Technology</a></li>
+              </ul>
+          </li>
+          <li><a href="#" class="nav-menu"> Contact</a></li>
+      </ul>
+      <div class="bx bx-menu" id="menu-icon" (click)="toggleMenu()" [ngClass]="{'bxs-x-square': isMenuOpen}"></div>
+      
+    </header>
+
     <app-root></app-root>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./assets/js/main.js"></script>

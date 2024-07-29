@@ -23,6 +23,7 @@
                             "src/assets"
                         ],
                         "styles": [
+                            "src/bootstrap.css",
                             "src/styles.css",
                             "node_modules/swiper/swiper-bundle.css"
                         ],
@@ -88,12 +89,16 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "src/styles.css"
+                            "src/styles.css",
+                            "src/bootstrap.css"
                         ],
                         "scripts": []
                     }
                 }
             }
         }
+    },
+    "cli": {
+      "analytics": "eb1b0326-ec73-43b1-af61-087835922b1d"
     }
 }

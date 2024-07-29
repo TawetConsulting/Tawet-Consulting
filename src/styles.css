@@ -12,35 +12,43 @@
     gap: 1rem;
     align-items: center;
     padding-block: 7rem;
+    padding-top: 50px;
+    background-color: #eee;
+    color: black;
 }
 
 .tawet-services-header h1 {
     font-size: 1.5rem;
     font-weight: 400;
-    color: var(--color-thistle);
+    /* color: var(--color-thistle); */
     text-transform: uppercase;
-    text-decoration: overline;
+    /*text-decoration: overline;*/
     align-self: flex-start;
+    text-align: center;
+    color:#133917
 }
 
 .tawet-services-sub-header h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 400;
-    color: var(--color-white-smoke);
+    /* color: var(--color-white-smoke); */
     z-index: -500;
     text-transform: uppercase;
     align-self: flex-start;
+    /* text-align: center; */
+    margin-bottom: 3%;
 }
 
-.tawet-services-body {
+/* .tawet-services-body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
     transition: all .55s ease;
-}
+    margin-bottom: -65px;
+} */
 
 .tawet-services-card {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -50,16 +58,18 @@
 }
 
 .tawet-services-image {
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
     background-size: cover;
     align-items: center;
     align-self: flex-start;
     flex-basis: 25%;
+    margin-top: 30px;
+    margin-left: 75px;
 }
 
-.tawet-services-card-title {
+/* .tawet-services-card-title {
     font-size: 0.8rem;
     font-weight: 500;
     z-index: 500;
@@ -67,9 +77,10 @@
     text-transform: uppercase;
     align-self: flex-start;
     flex-basis: 2.5%;
-}
+    margin-top: 15px;
+} */
 
-.tawet-card-body {
+/* .tawet-card-body {
     font-size: 1rem;
     font-weight: 300;
     z-index: 500;
@@ -79,26 +90,40 @@
     align-self: flex-start;
     display: -webkit-box;
     -webkit-line-clamp: 4;
-    overflow: hidden;
+    
     text-overflow: ellipsis;
     white-space: normal;
     max-height: calc(var(--max-chars) * 1.2em);
-}
+
+    background-color: var(--surface-color);
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: all ease-in-out 0.3s;
+    border-radius: 18px;
+    height: 100%;
+    position: relative;
+    overflow: hidden; position: relative !important;
+} */
 
 .tawet-card-actions {
     flex-basis: 2.5%;
     display: inline-block;
     margin-inline-end: 1rem;
-    color: var(--color-on-primary);
+    /*color: var(--color-on-primary);*/
     padding: 12px 30px;
     line-height: 1.1;
     font-size: 1.2rem;
     font-weight: 400;
     border-radius: 20px;
     text-transform: uppercase;
-    background: linear-gradient(to right, var(--color-linear-1) 10%, var(--color-goldenrod) 100%);
+    /*background: linear-gradient(to right, var(--color-linear-1) 10%, var(--color-goldenrod) 100%);*/
     transition: all 0.55s ease;
     align-self: flex-start;
+    background-color: #ffffff;
+    border: solid 2px var(--color-tangerine);
+    color: var(--color-tangerine);
+    border-radius: 16px;
+    text-transform: capitalize;
 }
 
 .tawet-card-actions:hover {
@@ -111,13 +136,13 @@
 /* Industries Section  */
 
 .tawet-industries-section {
-    background: linear-gradient(to left, var(--color-linear-2) 10%, var(--color-linear-3) 80%);
+    /* background: linear-gradient(to left, var(--color-linear-2) 10%, var(--color-linear-3) 80%); */
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     gap: 2rem;
-    padding-block: 7rem;
+    /* padding-block: 7rem; */
 }
 
 .tawet-industry-details {
@@ -169,6 +194,7 @@
     background: transparent;
     border: 1px solid var(--color-on-primary);
     transform: translate(10px);
+    text-decoration: none;
 }
 
 .tawet-industry-images {
@@ -183,10 +209,10 @@
 }
 
 .tawet-industry-card img {
-    width: 22rem;
-    height: 22rem;
+    /* width: 22rem;
+    height: 22rem; */
     object-fit: cover;
-    border-radius: 30% 10px;
+    /* border-radius: 30% 10px; */
 }
 
 .tawet-industry-card-title {
@@ -374,16 +400,23 @@
         flex-direction: column;
         padding: 20px 10px;
         transition: all .55s ease;
-        border: 2px solid blue;
+       /* border: 2px solid blue;*/
+       text-decoration: none;
+       
     }
     .nav-list a {
         margin-left: 0px;
         display: block;
         z-index: 500000;
         margin: 7px 0px;
+        text-decoration: none;
     }
     .nav-list.open {
         right: 0;
+        height: auto;
+        background: transparent;
+        backdrop-filter: blur(30px);
+        background-color: rgb(6, 70, 6);
     }
     .tawet-hero-image {
         display: none;
@@ -410,4 +443,634 @@
     .socials {
         align-self: flex-start;
     }
+    li:hover ul#services{
+        visibility: visible;
+        backdrop-filter: blur(30px);
+        background-color: rgb(6, 70, 6);
+        padding: 10px 10px 10px 10px;
+        opacity: 1;
+        display: block;
+        width: 260px;
+        margin-left: -270px; 
+        top: 105px;
+    }
+    li:hover ul#industry{
+        opacity: 1;
+        visibility: visible;
+        backdrop-filter: blur(30px);
+        background-color: rgb(6, 70, 6);
+        list-style: circle;
+        padding: 10px 10px 10px 10px;
+        display: block;
+        width: 260px;
+        margin-left: -205px;
+        top: 155px;  
+        box-shadow: 0px -1px 27px 4px black;
+    border-radius: 0 0 12px 17px;
+    }
+    .alignement {
+        align-items:first baseline ;
+        
+        align-content:space-around;
+        
+        margin-right:auto;
+        margin-left: auto;
+        width: auto;
+        height: auto;
+    }
+    
+    
+    
+}
+#services{
+   margin-top: 7px;
+   opacity: 0;
+    float: 0;
+   visibility: hidden;
+   position: absolute;
+    padding:10px 10px 10px 10px;
+    list-style: circle;
+    z-index: 9999;
+    
+}
+#services li a{
+    padding: 3px 1px 5px 2px;
+    text-decoration: none;
+    display: block;
+}
+#industry{
+    position: absolute;
+    opacity: 0;
+    margin-top: 7px;
+     float: 0;
+    visibility:hidden;
+     padding:15px 15px 15px 15px;
+     list-style: circle;
+     z-index: 9910099;
+ }
+ #industry li a{
+     padding: 3px 1px 5px 2px;
+     text-decoration:none;
+     display: block;
+     list-style: circle;
+ }
+ 
+
+.forLink:hover{
+    /* background-color: rgba(1, 141, 12, 0.37); */
+    text-decoration: none;
+    border-radius: 1px;
+    z-index: 900;
+    padding-left: 10px;
+    padding-right: 5px;
+    cursor: pointer;
+    
+}
+li:hover ul#services{
+    visibility: visible;
+    backdrop-filter: blur(56px);
+     /*background-color: rgb(13, 121, 61);*/
+    padding: 10px 10px 10px 10px;
+    opacity: 1;
+    display: block;
+    width: 260px;
+    box-shadow: 0px -1px 27px 4px black;
+    border-radius: 0 0 12px 17px;
+    text-decoration: none;
+}   
+
+
+li:hover ul#industry{
+    opacity: 1;
+    visibility: visible;
+    backdrop-filter: blur(30px);
+    /*background-color: rgb(13, 121, 61);*/
+    list-style: circle;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    width: 200px; 
+    box-shadow: 0px -1px 27px 4px black;
+    border-radius: 0 0 12px 17px;
+    text-decoration: none;
+}
+.backGround{
+  background-color: rgb(13, 121, 61);
+ }
+ .backGround1{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding-block: 7rem;
+    backdrop-filter: blur(20px);
+    background: rgba(11, 190, 86, 0.2);
+    padding-top: 50px;
+   }
+.backGround2{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding-block: 7rem;
+    backdrop-filter: blur(20px);
+    background: rgba(4, 77, 34, 0.2);
+    padding-top: 50px;
+}
+.backGround3{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding-block: 7rem;
+    backdrop-filter: blur(20px);
+    background: rgba(41, 121, 74, 0.2);
+    padding-top: 50px;
+}
+.backGround4{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    padding-block: 7rem;
+    backdrop-filter: blur(20px);
+    background: rgba(56, 99, 74, 0.2);
+    padding-top: 50px;
+}
+.tawet-card-body-2 {
+    font-size: 1rem;
+    font-weight: 300;
+    z-index: 500;
+    margin-top: -10px;
+    line-height: 1.7;
+    color: var(--color-thistle);
+    flex-basis: 70%;
+    align-self: flex-start;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    /*overflow: hidden;*/
+    text-overflow: ellipsis;
+    white-space: normal;
+    max-height: calc(var(--max-chars) * 1.2em);
+    margin-top: 1px;
+
+    background-color: var(--surface-color);
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: all ease-in-out 0.3s;
+    border-radius: 18px;
+    height: 100%;
+    position: relative;
+    overflow: hidden; position: relative !important;
+}
+.tawet-card-body-3 {
+    font-size: 1rem;
+    font-weight: 300;
+    z-index: 500;
+    margin-top: -20px;
+    line-height: 1.7;
+    color: var(--color-thistle);
+    flex-basis: 70%;
+    align-self: flex-start;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    /*overflow: hidden;*/
+    text-overflow: ellipsis;
+    white-space: normal;
+    max-height: calc(var(--max-chars) * 1.2em);
+    margin-top: -5px;
+
+    background-color: var(--surface-color);
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+    padding: 60px 30px 60px 70px;
+    transition: all ease-in-out 0.3s;
+    border-radius: 18px;
+    height: 100%;
+    position: relative;
+    overflow: hidden; position: relative !important;
+}
+.service.service-item {
+    background-color: var(--surface-color);
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+    padding: 60px 30px 60px 70px;
+    transition: all ease-in-out 0.3s;
+    border-radius: 18px;
+    height: 100%;
+    position: relative;
+    overflow: hidden; position: relative !important;
+}
+
+
+
+.sectionGroup {
+    position: relative;
+    display: block;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* gap: 1rem; */
+    /* align-items: center; */
+    /* padding-block: 7rem; */
+    /* backdrop-filter: blur(20px); */
+    /* background: rgba(11, 190, 86, 0.2); */
+    /* padding-top: 50px; */
+}
+
+.tawet-card-body {
+
+    white-space: normal;
+    /* max-height: calc(var(--max-chars)* 1.2em); */
+    background-color: white;
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: all ease-in-out 0.3s;
+    border-radius: 18px;
+    height: 100%; 
+    /* position: relative; */
+    overflow: hidden; 
+    position: relative !important;
+    text-overflow: ellipsis;
+    width: auto;
+    height: auto;
+   
+}
+
+.tawet-services-card-title {
+    font-size: 1rem;
+    font-weight: normal;
+    z-index: 500;
+    /* color: var(--color-white-smoke); */
+    text-transform: capitalize;
+    /* align-self: flex-start; */
+    /* flex-basis: 2.5%; */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.grayBg {
+    background-color: #eee!important;
+
+}
+
+.textBlack {
+    color: black!important;
+}
+
+.themeBgColor {
+    background-color: #38703d!important;
+}
+
+body {
+    background: initial;
+}
+
+.tawet-services-body {
+    /* display: grid; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    transition: all .55s ease;
+    /* margin-bottom: -65px; */
+}
+
+header {
+    background-color: #133917;
+    padding: 33px 9%;
+    /* border-bottom: solid 1px #d1820c; */
+    box-shadow: 0px -1px 27px 4px black;
+}
+
+/* .col-md-3 {
+    float: left;
+    width: 25%;
+} */
+
+ul:hover li a {
+    text-decoration: none;
+   
+}
+.alignement {
+    align-items: center;
+    
+    align-content: center;
+    
+    margin-right: -400px;
+    margin-left: 350px;
+}
+.container {
+    display: none;
+}
+#ch {
+    display: none;
+}
+#cht {
+    display: none;
+}
+#cht:checked~.container{
+    display: block; 
+}
+
+#ch:checked ~.container{
+    display: block;
+}
+#chtt {
+    display: none;
+}
+#chtt:checked~.container{
+    display: block; 
+}
+#chttt {
+    display: none;
+}
+#chttt:checked~.container{
+    display: block; 
+}
+#chttttt {
+    display: none;
+}
+#chttttt:checked~.container{
+    display: block; 
+}
+#chtttt {
+    display: none;
+}
+#chtttt:checked~.container{
+    display: block; 
+}
+#chc {
+    display: none;
+}
+#chc:checked~.container{
+    display: block; 
+}
+#chcc {
+    display: none;
+}
+#chcc:checked~.container{
+    display: block; 
+}
+#chccc {
+    display: none;
+}
+#chccc:checked~.container{
+    display: block; 
+}
+#chcccc {
+    display: none;
+}
+#chcccc:checked~.container{
+    display: block; 
+}
+#chccccc {
+    display: none;
+}
+#chccccc:checked~.container{
+    display: block; 
+}
+#chcccc {
+    display: none;
+}
+#chcccc:checked~.container{
+    display: block; 
+}
+#chcccccc {
+    display: none;
+}
+#chcccccc:checked~.container{
+    display: block; 
+}
+#chccccccc {
+    display: none;
+}
+#chccccccc:checked~.container{
+    display: block; 
+}
+#aboutt {
+    display: none;
+}
+#aboutt:checked~.positionement {
+    display: block; 
+}
+
+.tawettcard-body {
+
+    white-space: normal;
+    /* max-height: calc(var(--max-chars)* 1.2em); */
+    
+    padding: 15px;
+    transition: all ease-in-out 0.3s;
+    border-radius: 18px;
+    height: 100%; 
+    /* position: relative; */
+    overflow: hidden; 
+    position: relative !important;
+    text-overflow: ellipsis;
+    width: auto;
+    height: auto;
+    
+   
+}
+
+.dd{
+    margin-top: -30px;
+}
+.positionement {
+    margin-top: -20px;
+    display: none;
+    margin-left: -2px;
+}
+@media (max-width:800px){
+    .alignement {
+        align-items: center;
+        
+        align-content:center;
+        
+        margin-right:0px;
+        margin-left: 0px;
+    }
+}
+@media (max-width:900px){
+    .alignement {
+        align-items: center;
+        
+        align-content:center;
+        
+        margin-right:0px;
+        margin-left: 0px;
+    }
+}
+
+.swiper-container {
+    margin-top: -45px !important;
+    margin-bottom: -20px;
+}
+
+.tawet-hero-text a{
+    text-decoration: none;
+}
+
+.backlayer {
+    margin-top: -25px;
+    /* background: linear-gradient(to left, 
+    var(--color-linear-2) 10%, var(--color-linear-3) 80%); */
+    padding-bottom: 40px;
+}
+
+/**/
+
+.theme-btn-green {
+    background-color: transparent; 
+    border: solid 2px #ffffff;
+    color: #ffffff;
+
+}
+
+.hide {
+    display: none!important;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+body {
+    line-height: 1.5em;
+}
+
+.section-description {
+    padding-top: 10px;
+}
+
+
+.tawet-card-actions:hover {
+    cursor: pointer;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+.text-capitalized {
+    text-transform: capitalize!important;
+}
+
+.text-capitalized h1{
+    text-transform: capitalize!important;
+}
+
+section {
+    padding: 0 8%;
+}
+
+.tawet-services-card {
+    text-align: center;
+}
+
+.tawet-services-image {
+    margin-left: 0!important;
+}
+
+.tawet-services-card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--color-tangerine);
+    text-decoration: none;
+}
+
+.text-left {
+    text-align: left!important;
+}
+
+.tawet-about {
+    background-color: #2a2c39;
+}
+
+.btn-action {
+    /* font-family: var(--heading-font); */
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    /* background: #ef6603;
+    color: #ffffff; */
+}
+
+.btn-action-orange {
+    background: #ef6603!important;
+    color: #ffffff!important;
+}
+
+.tawet-hero {
+    background: inherit;
+}
+
+.tawet-hero-text a{
+    background: inherit;
+    /* text-transform: capitalize!important; */
+}
+
+.theme-section-header {
+    font-size: 2.5rem!important;
+    font-weight: 700!important;
+    font-family: "Permanent Marker", cursive;
+    color: var(--color-tangerine)!important;
+    margin-bottom: 3%!important;
+}
+
+.tawet-card-body {
+    border-radius: 0;
+}
+
+.tawet-services-card-title {
+    font-family: "Permanent Marker";
+}
+
+.swiper-wrapper {
+    background-image: linear-gradient(rgb(19 57 23), #3d3f49) !important;
+}
+
+.nav-list a {
+    /* text-transform: uppercase; */
+}
+
+.logo:hover {
+    text-decoration: none;
+}
+
+.theme-dark-blue-bg {
+    background-color: #2a2c39;
+}
+
+.theme-text-color {
+    color: #0d0d0d!important;
+}
+
+.footer {
+    background-color: #343641 !important;
+}
+
+li:hover ul.nav-menu-item {
+    visibility: visible;
+    padding: 10px 10px 10px 10px;
+    opacity: 1;
+    display: block;
+    width: auto;
+    border-radius: 0!important;
+    text-decoration: none;
+    background-color: rgb(63 67 71);
+    text-transform: capitalize!important;
+    box-shadow: inherit!important;
+}
+
+.nav-menu {
+    text-transform: uppercase;
+}
+
+.nav-list a:hover {
+    border-bottom: 0px solid #ef6603!important;
+    border-top: 0px solid #ef6603!important;
+    color: #ef6603;
 }
