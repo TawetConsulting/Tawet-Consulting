@@ -1074,3 +1074,14 @@ li:hover ul.nav-menu-item {
     border-top: 0px solid #ef6603!important;
     color: #ef6603;
 }
+.whatsapp {
+    width: 30px;
+    background-color: #eee;
+    border-radius: 30%;
+}
+.whatsapp:hover {
+   
+   background-color:#f28500 ;
+   transform: scale(1.5);
+   color: #f28500 var(--color-tangerine);
+}
