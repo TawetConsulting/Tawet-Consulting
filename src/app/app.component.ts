@@ -46,23 +46,23 @@ export class AppComponent implements AfterViewInit{
   
   slides: Slide[] = [
     {
-      image: '../../assets/images/backgrounds/welcome/hero.png',
+      image: '../../assets/images/backgrounds/welcome/WhatsApp Image 2024-08-01 at 14.53.53.jpeg',
       title: 'Go beyond boundaries',
       subtitle: 'Business Finance, and Regulations',
       text: 'Unlock the power of interdisciplinary expertise to conquer evolving risk landscapes and propel your business towards unparalleled growth.'
-    }
-    // {
-    //   image: '../../assets/images/backgrounds/welcome/data-business.jpg',
-    //   title: 'Insight Unleashed',
-    //   subtitle: 'Data Analytics and Business Intelligence',
-    //   text: 'Empower your organization with precise data-driven solutions, guiding strategic decisions and maximizing potential across industries'
-    // },
-    // {
-    //   image: '../../assets/images/backgrounds/welcome/risk-management.jpg',
-    //   title: 'Precision Shield',
-    //   subtitle: 'Risk Management Solutions',
-    //   text: 'Navigate financial risks seamlessly with our expert team, combining numerical optimization and strategic foresight to fortify your organization\'s resilience'
-    // },
+    },
+     {
+       image: '../../assets/images/backgrounds/welcome/hero.png',
+       title: 'Insight Unleashed',
+       subtitle: 'Data Analytics and Business Intelligence',
+       text: 'Empower your organization with precise data-driven solutions, guiding strategic decisions and maximizing potential across industries'
+     },
+     {
+       image: '../../assets/images/backgrounds/welcome/bruce-mars-xj8qrWvuOEs-unsplash.jpg',
+       title: 'Precision Shield',
+       subtitle: 'Risk Management Solutions',
+       text: 'Navigate financial risks seamlessly with our expert team, combining numerical optimization and strategic foresight to fortify your organization\'s resilience'
+     },
   ];
 
   yourData = `Our team of data scientists, mathematicians, and computer scientists collaborate to deliver cutting-edge data-driven solutions for complex challenges across healthcare, retail, finance, and insurance. We leverage market trends and implement data-driven decision-making processes. Through the development of predictive models for market trends, customer behavior, and financial performance, we empower companies to make informed decisions with greater certainty. Additionally, we craft hypotheses and testing methods to optimize control within your organization, addressing your unique challenges head-on.`; // Replace with your actual data source
