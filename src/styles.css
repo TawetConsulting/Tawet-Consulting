@@ -29,6 +29,7 @@
 }
 
 .tawet-services-sub-header h1 {
+
     font-size: 2.5rem;
     font-weight: 400;
     /* color: var(--color-white-smoke); */
@@ -479,7 +480,14 @@
         height: auto;
     }
     
-    
+    .tawet-hero-text h5 {
+        font-size: 2rem!important;
+        font-weight: 700;
+        z-index: 500;
+        font-family: "Permanent Marker", cursive;
+        color: var(--color-tangerine);
+        margin-bottom: 1rem;
+    }
     
 }
 #services{
@@ -759,18 +767,20 @@ ul:hover li a {
 .container {
     display: none;
 }
-#ch {
+#jch{
+    display:none;
+}
+#jch:checked ~.container{
+    display: block;
+}
+#jch:checked ~.forL{
     display: none;
 }
-#cht {
+#cht{
     display: none;
 }
 #cht:checked~.container{
     display: block; 
-}
-
-#ch:checked ~.container{
-    display: block;
 }
 #chtt {
     display: none;
@@ -784,17 +794,26 @@ ul:hover li a {
 #chttt:checked~.container{
     display: block; 
 }
+#chttt:checked~.forL{
+    display: none; 
+}
 #chttttt {
     display: none;
 }
 #chttttt:checked~.container{
     display: block; 
 }
+#chttttt:checked~.forL{
+    display:none; 
+}
 #chtttt {
     display: none;
 }
 #chtttt:checked~.container{
     display: block; 
+}
+#chtttt:checked~.forL{
+    display: none; 
 }
 #chc {
     display: none;
@@ -805,8 +824,12 @@ ul:hover li a {
 #chcc {
     display: none;
 }
+
 #chcc:checked~.container{
     display: block; 
+}
+#chcc:checked~.forL{
+    display: none; 
 }
 #chccc {
     display: none;
@@ -814,17 +837,26 @@ ul:hover li a {
 #chccc:checked~.container{
     display: block; 
 }
+#chccc:checked~.forL{
+    display: none; 
+}
 #chcccc {
     display: none;
 }
 #chcccc:checked~.container{
     display: block; 
 }
+#chcccc:checked~.forL{
+    display: none; 
+}
 #chccccc {
     display: none;
 }
 #chccccc:checked~.container{
     display: block; 
+}
+#chccccc:checked~.forL{
+    display: none; 
 }
 #chcccc {
     display: none;
@@ -844,11 +876,19 @@ ul:hover li a {
 #chccccccc:checked~.container{
     display: block; 
 }
+#chccccccc:checked~.forL{
+    display: none; 
+}
 #aboutt {
     display: none;
 }
 #aboutt:checked~.positionement {
-    display: block; 
+    display: block;
+}
+#aboutt:checked~.forLabel {
+    display: none;
+   
+
 }
 
 .tawettcard-body {
@@ -1075,13 +1115,23 @@ li:hover ul.nav-menu-item {
     color: #ef6603;
 }
 .whatsapp {
+    margin-top: 2px;
     width: 30px;
     background-color: #eee;
     border-radius: 30%;
+    height: 27px;
 }
 .whatsapp:hover {
    
    background-color:#f28500 ;
    transform: scale(1.5);
    color: #f28500 var(--color-tangerine);
+}
+.tawet-hero-text h5 {
+    font-size: 2rem!important;
+    font-weight: 700;
+    z-index: 500;
+    font-family: "Permanent Marker", cursive;
+    color: var(--color-tangerine);
+    margin-bottom: 1rem;
 }
