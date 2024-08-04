@@ -20,35 +20,7 @@
 
 <body>
 
-    <header>
-      <a href="#" class="logo">TAWET CONSULTING</a>
-
-      <ul class="nav-list" [ngClass]="{'open': isMenuOpen}">
-          <li><a href="#home" class="nav-menu"> Home</a></li>
-          <li><a href="#about" class="nav-menu"> About</a></li>
-          <li><a href="#our services" class="nav-menu"> Services</a>
-              <ul id="services" class="nav-menu-item">
-                  <li><a class="forLink" href="#our services">Risk, Finance and Regulations</a></li>
-                  <li><a  class="forLink" href="#joint">Data Analytics and Business Intelligence</a></li>
-                  <li><a class="forLink" href="#finTech">FinTech Solutions and Business Process Optimization</a></li>
-                  <li><a class="forLink" >Construction, Project Management and Quality Assurance</a></li>
-                  <li><a class="forLink" href="#general">General Services</a></li>
-              </ul>
-          </li>
-          <li><a href="#industries" class="nav-menu"> Industries</a>
-              <ul id="industry" class="nav-menu-item">
-                  <li><a href="#finacial" class="forLink">Financial services</a></li>
-                  <li><a class="forLink" href="#HealthCare"> HealthCare</a></li>
-                  <li><a class="forLink" href="#Infrastructures">Infrastructures and construction</a></li>
-                  <li><a class="forLink" href="#Retail">  Retail</a></li>
-                  <li><a class="forLink" href="#Information"> Technology</a></li>
-              </ul>
-          </li>
-          <li><a href="#contact" class="nav-menu"> Contact</a></li>
-      </ul>
-      <div class="bx bx-menu" id="menu-icon" (click)="toggleMenu()" [ngClass]="{'bxs-x-square': isMenuOpen}"></div>
-      
-    </header>
+    
 
     <app-root></app-root>
     <script src="https://unpkg.com/scrollreveal"></script>

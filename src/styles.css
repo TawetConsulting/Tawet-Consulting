@@ -417,7 +417,7 @@
         height: auto;
         background: transparent;
         backdrop-filter: blur(30px);
-        background-color: rgb(6, 70, 6);
+        background-color: rgb(38, 49, 38);
     }
     .tawet-hero-image {
         display: none;
@@ -447,7 +447,7 @@
     li:hover ul#services{
         visibility: visible;
         backdrop-filter: blur(30px);
-        background-color: rgb(6, 70, 6);
+        background-color: rgb(38, 49, 38);
         padding: 10px 10px 10px 10px;
         opacity: 1;
         display: block;
@@ -459,7 +459,7 @@
         opacity: 1;
         visibility: visible;
         backdrop-filter: blur(30px);
-        background-color: rgb(6, 70, 6);
+        background-color: rgb(38, 49, 38);
         list-style: circle;
         padding: 10px 10px 10px 10px;
         display: block;
@@ -488,6 +488,7 @@
         color: var(--color-tangerine);
         margin-bottom: 1rem;
     }
+    
     
 }
 #services{
@@ -937,6 +938,13 @@ ul:hover li a {
         margin-right:0px;
         margin-left: 0px;
     }
+    .form{
+        
+        margin-left: -200px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    
+    }
 }
 
 .swiper-container {
@@ -1135,3 +1143,232 @@ li:hover ul.nav-menu-item {
     color: var(--color-tangerine);
     margin-bottom: 1rem;
 }
+.form{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+}
+.form2{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 700px;
+    height: auto;
+    margin-left: 22%;
+   
+}
+.formForDiv{
+    margin-left: -30px;
+}
+.formForDiv2{
+    margin-left: -140px;
+}
+.input{
+    border-style: none;
+    border-bottom: inset rgb(138, 138, 138);
+    margin-left: 30px;
+    outline: none;
+    border: groove;
+    width: 250px;
+    font-size: large;
+    height: 50px;
+
+}
+.input1{
+    border-style: none;
+    border-bottom: inset rgb(138, 138, 138);
+    border: groove;
+    width: 250px;
+    outline: none;
+    font-size: large;
+    height: 50px;
+}
+.Heading{
+    font-weight: bold;
+    font-size: 24px;
+    color: #263549;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+.button {
+    width: 80px;
+    font-size: smaller;
+    background-color: #d8d8d8;
+    color: #000;
+    outline: none;
+    border:thick;
+    transform: scale(1.5);
+    margin-left: 45px;
+    border: solid;
+    border-color: #ffffff;
+
+}
+.button:hover{
+    transform: scale(1.5);
+    color: #ffffff;
+    background-color: #777777;
+}
+@media(max-width:500px){
+
+    .form2{
+        padding-top: 30px;
+        padding-bottom: 20px;
+        width: 310px;
+        height: auto;
+        margin-left: 40%;
+       
+    }
+    .formForDiv{
+        margin-left: 6px;
+    }
+}
+textarea {
+    width: 540px;
+    margin-left: 33px;
+    height: 100px;
+    outline: none;
+}
+.align {
+    text-align: center;
+    align-items: center;
+    margin-left: 40%;
+}
+
+@media(max-width:980px){
+
+    .form2{
+        padding-top: 30px;
+        padding-bottom: 20px;
+        width: 500px;
+        height: auto;
+        margin-left: 33%;
+       
+    }
+    .formForDiv{
+        margin-left: -30px;
+    }
+    .formForDiv2{
+        margin-left: -116px;
+    }
+    .input{
+        border-style: none;
+        border-bottom: inset rgb(138, 138, 138);
+        margin-left: 30px;
+        outline: none;
+        border: groove;
+        width: 200px;
+        height: 40px;
+    
+    }
+    .input1{
+        border-style: none;
+        border-bottom: inset rgb(138, 138, 138);
+        border: groove;
+        width: 200px;
+        outline: none;
+        height: 50px;
+    }
+    .Heading{
+        font-weight: bold;
+        font-size: 24px;
+        color: #263549;
+        text-transform: capitalize;
+        text-decoration: underline;
+    }
+    .button {
+        width: 80px;
+        font-size: smaller;
+        background-color: #d8d8d8;
+        color: #000;
+        outline: none;
+        border:thick;
+        transform: scale(1.5);
+        margin-left: 45px;
+        border: solid;
+        border-color: #ffffff;
+    
+    }
+    .align {
+        text-align: center;
+        align-items: center;
+        margin-left: 46%;
+    }
+    textarea {
+        width: 430px;
+        margin-left: 20px;
+        height: 100px;
+        outline: none;
+    }
+}
+@media(max-width:500px){
+
+    .form2{
+        padding-top: 30px;
+        padding-bottom: 20px;
+        width: 500px;
+        height: auto;
+        margin-left: 18%;
+        padding-left: 50px;
+        padding-right: 30px;
+       
+    }
+    .formForDiv{
+        margin-left: -30px;
+    }
+    .formForDiv2{
+        margin-left: -98px;
+    }
+    .input{
+        border-style: none;
+        border-bottom: inset rgb(138, 138, 138);
+        margin-left: 30px;
+        outline: none;
+        border: groove;
+        width: 165px;
+        height: 40px;
+    
+    }
+    .input1{
+        border-style: none;
+        border-bottom: inset rgb(138, 138, 138);
+        border: groove;
+        width: 165px;
+        outline: none;
+        height: 50px;
+    }
+    .Heading{
+        font-weight: bold;
+        font-size: 24px;
+        color: #263549;
+        text-transform: capitalize;
+        text-decoration: underline;
+    }
+    .button {
+        width: 80px;
+        font-size: smaller;
+        background-color: #d8d8d8;
+        color: #000;
+        outline: none;
+        border:thick;
+        transform: scale(1.5);
+        margin-left: 45px;
+        border: solid;
+        border-color: #ffffff;
+    
+    }
+    .align {
+        text-align: center;
+        align-items: center;
+        margin-left: 44%;
+    }
+    textarea {
+        margin-top: 10px;
+        width: 385px;
+        margin-left: 20px;
+        height: 100px;
+        outline: none;
+    }
+}
+

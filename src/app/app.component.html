@@ -1,3 +1,32 @@
+<header>
+    <a href="#" class="logo">TAWET CONSULTING</a>
+
+    <ul class="nav-list" [ngClass]="{'open': isMenuOpen}">
+        <li><a href="#home" class="nav-menu"> Home</a></li>
+        <li><a href="#about" class="nav-menu"> About</a></li>
+        <li><a href="#our services" class="nav-menu"> Services</a>
+            <ul id="services" class="nav-menu-item">
+                <li><a class="forLink" href="#our services">Risk, Finance and Regulations</a></li>
+                <li><a  class="forLink" href="#joint">Data Analytics and Business Intelligence</a></li>
+                <li><a class="forLink" href="#finTech">FinTech Solutions and Business Process Optimization</a></li>
+                <li><a class="forLink" href="#Construction" >Construction, Project Management and Quality Assurance</a></li>
+                <li><a class="forLink" href="#general">General Services</a></li>
+            </ul>
+        </li>
+        <li><a href="#industries" class="nav-menu"> Industries</a>
+            <ul id="industry" class="nav-menu-item">
+                <li><a href="#finacial" class="forLink">Financial services</a></li>
+                <li><a class="forLink" href="#HealthCare"> HealthCare</a></li>
+                <li><a class="forLink" href="#Infrastructures">Infrastructures and construction</a></li>
+                <!--<li><a class="forLink" href="#Retail">  Retail</a></li>-->
+                <li><a class="forLink" href="#Information"> Technology</a></li>
+            </ul>
+        </li>
+        <li><a href="#contact" class="nav-menu"> Contact</a></li>
+    </ul>
+    <div class="bx bx-menu" id="menu-icon" (click)="toggleMenu()" [ngClass]="{'bxs-x-square': isMenuOpen}"></div>
+    
+  </header>
 <div id="home" class="tawet-hero-container">
     <swiper [config]="config">
         <div class="swiper-wrapper">
@@ -321,7 +350,7 @@
     </div>
     <p id="const"></p>
 </section>
-<section id="" class="sectionGroup">
+<section id="Construction" class="sectionGroup">
 
     <div class="tawet-services-header text-capitalized">
         <h1>Construction, Project Management and Quality Assurance</h1>
@@ -388,11 +417,11 @@
             At Tawet Consulting, we're not just consultants, we're catalysts for transformation. From healthcare to technology, finance to innovation, we're here to elevate your journey. Join a network of trailblazers where expertise meets innovation.
         </p>
 
-        <a href="" class="text-capitalized tawet-industry-actions btn-action btn-action-orange">Work with us</a>
+        <a href="" class="text-capitalized tawet-industry-actions btn-action btn-action-orange" id="finacial">Work with us</a>
     </div>
     <div class="tawet-industry-images">
         <div class="tawet-industry-card">
-            <img src="./../assets/images/backgrounds/welcome/about.png" alt="Card Image" class="tawet-industry-card-image">
+            <img src="./../assets/images/backgrounds/welcome/about.png" alt="Card Image" class="tawet-industry-card-image" >
             <!-- <h2 class="tawet-industry-card-title">Financial services</h2> -->
         </div>
     </div>
@@ -403,7 +432,7 @@
     
     <br>
     <div>
-        <h1 class="tawet-industry-details" id="finacial">
+        <h1 class="tawet-industry-details"id="HealthCare">
             Financial Services
         </h1>
     </div>
@@ -413,7 +442,7 @@
         </p>
     </div>
     <div>
-        <h1 class="tawet-industry-details" id="HealthCare">
+        <h1 class="tawet-industry-details" id="Infrastructures">
             HealthCare 
         </h1>
     </div>
@@ -425,7 +454,7 @@
         </p>
     </div>
     <div>
-        <h1 class="tawet-industry-details" id="Infrastructures">
+        <h1 class="tawet-industry-details" id="Information">
             Infrastructures and Construction
         </h1>
     </div>
@@ -437,7 +466,7 @@
         </p>
     </div>
     <div>
-        <h1 class="tawet-industry-details" id="Information">
+        <h1 class="tawet-industry-details" >
             Information Technology 
         </h1>
     </div>
@@ -449,8 +478,40 @@
             Software development.
         </p>
     </div>
+    <div id="contact">
+
+    </div>
 </section>
 
+<section class="form">
+    <div class="tawet-services-sub-header theme-section-header text-left align">
+        <h1>CONTACT US</h1>
+    </div>
+    <div class="form2 form2_2">
+        <div class="formForDiv">
+            
+            <input type="text" maxlength="50" placeholder="Enter Name" required="" class="input">
+            <input type="text" maxlength="50" placeholder="Enter SurName" required="" class="input">
+        </div><br>
+        
+        <div class="formForDiv">
+            <input type="text" maxlength="50" placeholder="Enter UserName" required="" class="input">
+            <input type="text" maxlength="50" placeholder="Enter Phone No" required="" class="input">
+        </div><br>
+        <div class="formForDiv2">
+
+            <input type="text" maxlength="100" placeholder="Enter Email" required="gmail.com" class="input1 formForDiv2">
+        </div><br>
+        <div class="formForDiv">
+
+            <textarea></textarea>
+        </div><br>
+
+        <div class="formForDiv">
+            <input type="button" value="SEND IT" class="button">
+        </div>
+    </div>
+</section>
 
 <div class="tawet-footer footer ">
     <div class="tawet-company-details">
@@ -483,8 +544,5 @@
             </ul>
             <router-outlet></router-outlet>
         </div>
-    </div>
-    <div id="contact">
-
     </div>
 </div>
