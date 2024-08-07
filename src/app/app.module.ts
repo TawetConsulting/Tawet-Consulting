@@ -8,7 +8,8 @@ import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { FianceComponent } from './fiance/fiance.component';
 import { AnalyticsComponent } from './analytics/analytics.component';
 import { MoreserviceComponent } from './moreservice/moreservice.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +22,7 @@ import { MoreserviceComponent } from './moreservice/moreservice.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     NgxUsefulSwiperModule,
+    HttpClientModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
-
+import { Component, Injectable } from '@angular/core';
+import {} from '@angular/common/http';
+@Injectable({
+  providedIn: 'root',
+})
 @Component({
   selector: 'app-moreservice',
   templateUrl: './moreservice.component.html',

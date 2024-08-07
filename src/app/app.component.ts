@@ -1,3 +1,4 @@
+import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Subscription, interval, takeWhile } from 'rxjs';
@@ -25,6 +26,12 @@ export class AppComponent implements AfterViewInit{
   loading = true;
   titleState = "";
   isSticky = true;
+
+  formData = {
+    name: '',
+    email: '',
+    textDescrip:''
+  };
   
   isMenuOpen: boolean = false;
 
@@ -81,5 +88,58 @@ export class AppComponent implements AfterViewInit{
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
   }
+  
+  constructor(private Http: HttpClient){}
+  
+  url='http://localhost:4200/';
+  users(){
+    return this.Http.get(this.url)
+  }
+  saveUsers(data:any){ 
+    return this.Http.post(this.url,data)
+  }
+ 
+  getUsersFormsData(data:any)
+  {
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+    console.warn(this.formData)
+    const url='http://209.209.40.35:8083/process/email';
+    this.Http.post(url,this.formData,{headers}).subscribe(
+      response=>{
+      console.log('Form successfully submiteed!',response)
+    },
+    (error:HttpErrorResponse)=>{
+      console.log('Error submitting form',error);
+      if (error.status === 404) {
+        console.error('Endpoint not found');
+      }
+
+    });
+  }
+
+  onSubmit(){
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+    console.warn(this.formData)
+    const url='http://209.209.40.35:8083/process/email';
+    this.Http.post(url,this.formData,{headers}).subscribe(
+      response=>{
+      console.log('Form successfully submiteed!',response)
+    },
+    (error:HttpErrorResponse)=>{
+      console.log('Error submitting form',error);
+      if (error.status === 404) {
+        console.error('Endpoint not found');
+      }
+
+    });
+
+  }
 
 }
+
+
+  
