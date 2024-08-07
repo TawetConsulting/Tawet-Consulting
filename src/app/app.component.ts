@@ -30,7 +30,7 @@ export class AppComponent implements AfterViewInit{
   formData = {
     name: '',
     email: '',
-    textDescrip:''
+    message:''
   };
   
   isMenuOpen: boolean = false;
@@ -91,24 +91,27 @@ export class AppComponent implements AfterViewInit{
   
   constructor(private Http: HttpClient){}
   
-  url='http://localhost:4200/';
-  users(){
-    return this.Http.get(this.url)
-  }
-  saveUsers(data:any){ 
-    return this.Http.post(this.url,data)
-  }
+  // url='http://localhost:4200/';
+  // users(){
+  //   return this.Http.get(this.url)
+  // }
+  // saveUsers(data:any){ 
+  //   return this.Http.post(this.url,data)
+  // }
  
   getUsersFormsData(data:any)
   {
     const headers = new HttpHeaders({
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*'
     });
+
     console.warn(this.formData)
     const url='http://209.209.40.35:8083/process/email';
+
     this.Http.post(url,this.formData,{headers}).subscribe(
       response=>{
-      console.log('Form successfully submiteed!',response)
+      console.log('Form successfully submiteed!', response)
     },
     (error:HttpErrorResponse)=>{
       console.log('Error submitting form',error);
