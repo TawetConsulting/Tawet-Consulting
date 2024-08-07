@@ -487,30 +487,26 @@
     <div class="tawet-services-sub-header theme-section-header text-left align">
         <h1>CONTACT US</h1>
     </div>
-    <div class="form2 form2_2">
-        <div class="formForDiv">
-            
-            <input type="text" maxlength="50" placeholder="Enter Name" required="" class="input">
-            <input type="text" maxlength="50" placeholder="Enter SurName" required="" class="input">
-        </div><br>
-        
-        <div class="formForDiv">
-            <input type="text" maxlength="50" placeholder="Enter UserName" required="" class="input">
-            <input type="text" maxlength="50" placeholder="Enter Phone No" required="" class="input">
-        </div><br>
-        <div class="formForDiv2">
+    <form #usersForm="ngForm" (ngSubmit)="getUsersFormsData(usersForm.value)">
+   
+        <div class="form2 form2_2">
+            <div class="formForDiv">
+                <input type="text" maxlength="50" [(ngModel)]="formData.name"  placeholder="Enter Name" required="" class="input" name="name">
+            </div><br>
+            <div class="formForDiv">
 
-            <input type="text" maxlength="100" placeholder="Enter Email" required="gmail.com" class="input1 formForDiv2">
-        </div><br>
-        <div class="formForDiv">
+                <input type="text" maxlength="100" [(ngModel)]="formData.email" placeholder="Enter Email" required="gmail.com" class="input" name="email">
+            </div><br>
+            <div class="formForDiv">
 
-            <textarea></textarea>
-        </div><br>
+                <textarea [(ngModel)]="formData.textDescrip" name="textDescription" placeholder="textDescription"></textarea>
+            </div><br>
 
-        <div class="formForDiv">
-            <input type="button" value="SEND IT" class="button">
+            <div class="formForDiv">
+                <button  class="tawet-card-actions forL button">SEND IT</button>
+            </div>
         </div>
-    </div>
+    </form>
 </section>
 
 <div class="tawet-footer footer ">
@@ -545,4 +541,5 @@
             <router-outlet></router-outlet>
         </div>
     </div>
+    <!--https://www.youtube.com/watch?v=TFFrbW9_iZE&t=38s-->
 </div>
