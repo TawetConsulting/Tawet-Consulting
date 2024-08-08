@@ -59,7 +59,7 @@ export class AppComponent implements AfterViewInit{
       text: 'Unlock the power of interdisciplinary expertise to conquer evolving risk landscapes and propel your business towards unparalleled growth.'
     },
      {
-       image: '../../assets/images/backgrounds/welcome/hero.png',
+       image: '../../assets/images/backgrounds/welcome/WhatsApp Image 2024-08-07 at 12.43.08.jpeg',
        title: 'Insight Unleashed',
        subtitle: 'Data Analytics and Business Intelligence',
        text: 'Empower your organization with precise data-driven solutions, guiding strategic decisions and maximizing potential across industries'
