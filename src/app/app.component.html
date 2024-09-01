@@ -486,26 +486,36 @@
     <div class="tawet-services-sub-header theme-section-header text-left align">
         <h1>CONTACT US</h1>
     </div>
-    <form #usersForm="ngForm" (ngSubmit)="getUsersFormsData(usersForm.value)">
-   
-        <div class="form2 form2_2">
-            <div class="formForDiv">
-                <input type="text" maxlength="50" [(ngModel)]="formData.name"  placeholder="Enter Name" required="" class="input" name="name">
-            </div><br>
-            <div class="formForDiv">
-
-                <input type="text" maxlength="100" [(ngModel)]="formData.email" placeholder="Enter Email" required="gmail.com" class="input" name="email">
-            </div><br>
-            <div class="formForDiv">
-
-                <textarea [(ngModel)]="formData.textDescrip" name="textDescription" placeholder="textDescription"></textarea>
-            </div><br>
-
-            <div class="formForDiv">
-                <button  class="tawet-card-actions forL button">SEND IT</button>
-            </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <iframe class="contact-us-iframe" src="https://localhost:44300/render/embedform?guid=857de6f5-6a48-49e5-893c-6639dc35c37e"></iframe>
         </div>
-    </form>
+
+        <form class="row contact-form hide" #usersForm="ngForm" (ngSubmit)="getUsersFormsData(usersForm.value)">
+    
+            <div class="col-sm-12 col-md-6">
+                <div class="form-group">
+                    <input type="text" maxlength="50" [(ngModel)]="formData.name"  placeholder="Enter Name" required="" class="form-control" name="name">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="form-group">
+                    <input type="email" maxlength="100" [(ngModel)]="formData.email" placeholder="Enter Email" required="gmail.com" class="form-control" name="email">
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="form-group">
+                    <textarea rows="10" [(ngModel)]="formData.message" name="textDescription" placeholder="Your message" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="col-sm-12 text-left">
+                <div class="form-group">
+                    <button  class="tawet-card-actions forL button btn  btn-action-orange">Send</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
 </section>
 
 <div class="tawet-footer footer ">
