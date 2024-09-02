@@ -56,7 +56,7 @@ export class AppComponent implements AfterViewInit{
       image: '../../assets/images/backgrounds/welcome/WhatsApp Image 2024-08-01 at 14.53.53.jpeg',
       title: 'Go beyond boundaries',
       subtitle: 'Business Finance, and Regulations',
-      text: 'Unlock the power of interdisciplinary expertise to conquer evolving risk landscapes and propel your business towards unparalleled growth.'
+      text: 'Unlock the power of interdisciplinary expertise to conquer evolving risk landscapes and propel your business towards exponential growth.'
     },
      {
        image: '../../assets/images/backgrounds/welcome/WhatsApp Image 2024-08-07 at 12.43.08.jpeg',
@@ -72,7 +72,7 @@ export class AppComponent implements AfterViewInit{
      },
   ];
 
-  yourData = `Our team of data scientists, mathematicians, and computer scientists collaborate to deliver cutting-edge data-driven solutions for complex challenges across healthcare, retail, finance, and insurance. We leverage market trends and implement data-driven decision-making processes. Through the development of predictive models for market trends, customer behavior, and financial performance, we empower companies to make informed decisions with greater certainty. Additionally, we craft hypotheses and testing methods to optimize control within your organization, addressing your unique challenges head-on.`; // Replace with your actual data source
+  yourData = `Our team of data scientists, mathematicians, and computer scientists collaborate to deliver cutting-edge data-driven solutions for complex challenges across healthcare, retail, finance and insurance. We leverage market trends and implement data-driven decision-making processes. Through the development of predictive models for market trends, customer behavior, and financial performance, we empower companies to make informed decisions with greater certainty. Additionally, we craft hypotheses and testing methods to optimize control within your organization, addressing your unique challenges head-on.`; // Replace with your actual data source
 
   ngAfterViewInit(): void {
     if (this.cardBodyRef.nativeElement.textContent.length > this.maxCharacters) {
