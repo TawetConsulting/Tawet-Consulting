@@ -25,8 +25,8 @@
         <li><a href="#contact" class="nav-menu"> Contact</a></li>
     </ul>
     <div class="bx bx-menu" id="menu-icon" (click)="toggleMenu()" [ngClass]="{'bxs-x-square': isMenuOpen}"></div>
-    
-  </header>
+</header>
+
 <div id="home" class="tawet-hero-container">
     <swiper [config]="config">
         <div class="swiper-wrapper">
@@ -370,7 +370,7 @@
                                 planning, scheduling, budgeting, and resource allocation. We also offer advisory services on project feasibility, risk assessment, and procurement strategies. We Implement project management methodologies tailored to the specific needs of infrastructure and construction projects.
                                 We oversee construction activities ensuring compliance with project specifications, conduct quality assurance and quality control inspections throughout the construction process, and implement advanced construction management techniques, such as Building Information Modeling (BIM) and Lean construction practices, to enhance efficiency and productivity.
                             </p>
-                        </div>
+                        <!-- </div> -->
                     </div>
                 </div>
             </div>
@@ -487,7 +487,7 @@
     </div>
     <div class="row">
         <div class="col-sm-12">
-            <iframe class="contact-us-iframe" src="https://www.e-entries.co.za/render/embedform?guid=857de6f5-6a48-49e5-893c-6639dc35c37e"></iframe>
+            <iframe class="contact-us-iframe" src="https://e-entries.co.za/render/embedform?guid=857de6f5-6a48-49e5-893c-6639dc35c37e"></iframe>
         </div>
 
         <form class="row contact-form hide" #usersForm="ngForm" (ngSubmit)="getUsersFormsData(usersForm.value)">
