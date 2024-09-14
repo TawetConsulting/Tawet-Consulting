@@ -942,7 +942,7 @@ ul:hover li a {
         
         margin-left: -200px;
         padding-top: 80px;
-        padding-bottom: 80px;
+        /* padding-bottom: 80px; */
     
     }
 }
@@ -1148,7 +1148,7 @@ li:hover ul.nav-menu-item {
     align-content: center;
     text-align: center;
     padding-top: 80px;
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
     
 }
 .form2{
@@ -1211,13 +1211,13 @@ li:hover ul.nav-menu-item {
         margin-left: 6px;
     }
 }
-textarea {
+/* textarea {
     width: 540px;
     margin-left: 28px;
     height: 100px;
     outline: none;
     font-size: large;
-}
+} */
 .align {
     text-align: center;
     align-items: center;
@@ -1337,3 +1337,12 @@ textarea {
     }
 }
 
+.contact-form  input {
+    height: 50px;
+}
+
+.contact-us-iframe {
+    width: 100%;
+    height: 50vh;
+    border: none;
+}
