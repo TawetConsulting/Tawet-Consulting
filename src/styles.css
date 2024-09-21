@@ -496,7 +496,7 @@
         text-align: center;
         width: 400px;
     }
-    .align1{
+    .align{
         margin-left: 40px !important;
     }
     
@@ -1367,8 +1367,10 @@ li:hover ul.nav-menu-item {
         text-align: center;
         width: 300px;
     }
-    .align1{
-        margin-left: 20px !important;
+    .align{
+        margin-left: 2px !important;
+        margin-top: -50px;
+        padding-top: 50px;
     }
 
     li:hover ul#services{
