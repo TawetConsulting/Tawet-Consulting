@@ -65,7 +65,7 @@ export class AppComponent implements AfterViewInit{
        text: 'Empower your organization with precise data-driven solutions, guiding strategic decisions and maximizing potential across industries'
      },
      {
-       image: '../../assets/images/backgrounds/welcome/bruce-mars-xj8qrWvuOEs-unsplash.jpg',
+       image: '../../assets/images/backgrounds/welcome/WhatsApp Image 2024-08-07 at 12.48.28.jpeg',
        title: 'Precision Shield',
        subtitle: 'Risk Management Solutions',
        text: 'Navigate financial risks seamlessly with our expert team, combining numerical optimization and strategic foresight to fortify your organization\'s resilience'
